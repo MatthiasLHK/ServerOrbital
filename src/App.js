@@ -1,12 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Logo from "./Logo";
+import middle from "./test.png";
 import './App.css';
+import { render } from "react-dom";
 
-function App() {
+export default class App extends Component {
+render(){
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Logo/>
         <p>
           Edit <code>src/App.js</code> and save to reload.part 2
         </p>
@@ -21,6 +25,6 @@ function App() {
       </header>
     </div>
   );
+  }
 }
 
-export default App;
